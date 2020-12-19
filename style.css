@@ -1,9 +1,20 @@
 body{
-	background-color: blue;
+	background-color: #00aeef;
+	font-family: Georgia;
+	margin: 0;
+	padding: 0;
 }
 
-h1{
-	color: white;
+header{
+	height: 400px;
+	margin: 0px auto 0;
+	text-align: center;
+	margin: 20px auto;
+	box-sizing: border-box;
+}
+
+header img{
+	height: 300px;
 }
 
 h2{
