@@ -1,41 +1,91 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body{
-	background-color: #00aeef;
+	background-color: #111111;
 	font-family: 'Raleway', sans-serif;
-	margin: 0;
-	padding: 0 40px;
 }
 
 header{
-	height: 300px;
-	margin: 0px auto 0;
+	background-color: #ff0024;
+	height: 425px;
 	text-align: center;
-	margin: 50px auto;
+	margin: -50px auto 0px;
 	box-sizing: border-box;
-	position: relative;
-	overflow: hidden;
 }
 
 header img{
 	height: 225px;
+	padding: 100px 0 50px;
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	position: sticky; 
+	background-color: #111111;
+	margin: -30px 0 0;
+	box-shadow: 0 5px 8px rgba(0,0,0,.2);
+	z-index: 5;
+	overflow: hidden;
+	top: 0;
+}
+
+nav ul{
 	position: relative;
-	padding: 50px 0 0 0;
+	text-align: center;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 15px 60px 0 0;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	word-spacing: 5px
+}
+
+ul a{
+	color: white;
+	text-decoration: none;
+}
+
+.block{
+	position: relative;
+	background-color: #2428e4;
+	width: 100%;
+	height: 150px;
+}
+
+.sep{
+	background-color: #111111;
+	width: 500px;
+	height: 10px;
+	margin-top: 25px;
 }
 
 .intro{
 	background-color: white;
-	margin: 0 auto 100px;
-	width: 950px;
+	margin: -120px auto 100px;
+	width: 1000px;
     height: 700px;
-	position: relative;
-	border-radius: 15px;
+	position: relative; 
+	border-radius: 25px;
 	box-sizing: border-box;
+	box-shadow: 5px 5px 5px rgba(17,17,17,.2);
 }
 
 .intro h2{
-	color: black;
+	color: #111111;
 	text-align: center;
-	font-size: 45pt;
-	padding-top: 20px;
+	font-size: 38pt;
+	padding-top: 30px;
 }
 
 .intro-aoc{
@@ -43,13 +93,13 @@ header img{
 	background-size: 100%;
 	width: 400px;
 	height: 400px;
-	position: absolute; bottom: 35px; left: -80px;
+	position: absolute; bottom: 35px; left: -55px;
 	z-index: 4;
 	transform: rotate(-10deg);
 }
 
 .label-aoc{
-	position: absolute; top: 640px; left: 20px;
+	position: absolute; top: 640px; left: 55px;
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
@@ -61,12 +111,12 @@ header img{
 	background-size: 100%;
 	width: 400px;
 	height: 400px;
-	position: absolute; top: 85px; left: 130px;
+	position: absolute; top: 85px; left: 165px;
 	transform: rotate(-3deg);
 }
 
 .label-io{
-	position: absolute; top: 480px; left: 280px;
+	position: absolute; top: 480px; left: 310px;
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
@@ -78,12 +128,12 @@ header img{
 	background-size: 100%;
 	width: 400px;
 	height: 400px;
-	position: absolute; top: 70px; right: 140px;
+	position: absolute; top: 70px; right: 170px;
 	transform: rotate(5deg);
 }
 
 .label-ap{
-	position: absolute; top: 440px; left: 485px;
+	position: absolute; top: 440px; left: 525px;
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
@@ -95,42 +145,143 @@ header img{
 	background-size: 100%;
 	width: 400px;
 	height: 400px;
-	position: absolute; bottom: 35px; right: -55px;
+	position: absolute; bottom: 35px; right: -25px;
 	transform: rotate(10deg);
 	z-index: 3;
 }
 
 .label-rt{
-	position: absolute; top: 640px; left: 690px;
+	position: absolute; top: 640px; left: 725px;
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
 	font-size: 14pt;
 }
 
+.about{
+	position: relative;
+	background-color: #111111;
+	width: 100%;
+	height: 1800px;
+	overflow: hidden;
+}
+
+.bio-1{
+	position: relative;
+	background-color: #ff0024;
+	width: 100%
+	height: 450px;
+	padding: 0 35px;
+	margin: 0;
+}
+
+.bio-1 h3{
+	padding-top: 30px
+	color: white;
+}
+
+.bio-1 img{
+	margin-top: -20px;
+}
+
+.bio-1 p{
+	position: absolute; top: 75px;
+}
+
+.bio-1 img,p{
+	display: inline-block;
+}
+
+.bio-2{
+	position: relative;
+	background-color: white;
+	width: 100%
+	height: 450px;
+	padding: 0 35px;
+	margin: 0;
+}
+
+.bio-2 h3{
+	padding-top: 20px
+	color: #111111;
+}
+
+.bio-2 img{
+	margin-top: -20px;
+}
+
+.bio-2 p{
+	position: absolute; top: 75px;
+	color: #111111;
+}
+
+.bio-2 img,p{
+	display: inline-block;
+}
+
+/*<div id="about" class="about">
+		<h2>Squad Members</h2>
+		<div class="bio-1">
+			<h3 id="aoc">Alexandria Ocasio-Cortez (D)NY</h3>
+			<img src="img/aoc.png" width="200px">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="bio-2">
+			<h3 id="io">Ilhan Omar (D)MN</h3>
+			<img src="img/ilhan-omar.png" width="200px">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="bio-3">
+			<h3 id="ap">Ayanna Pressley (D)MA</h3>
+			<img src="img/ayanna-pressley.png" width="200px">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="bio-4">
+			<h3 id="rt">Rashida Tlaib (D)MI</h3>
+			<img src="img/rashida-tlaib.png" width="200px">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+*/
+
+ 
 h2{
 	color: white;
-	font-family: 'Passion One', cursive;
-	font-size: 30pt;
+	font-family: 'Farro', sans-serif;
+	font-size: 26pt;
 }
 
 h3{
-	color: white;
 	font-size: 20px;
 	font-weight: bold;
 }
 
 p{
 	color: white;
-	float: right;
+	max-width: 700px
 }
 
 a{
-	color: red;
-}
-
-ul{
-	color: red;
+	color: #ff0024;
 }
 
 button.cta{
@@ -142,8 +293,4 @@ button.cta{
 	border: 3px solid white;
 	padding: 10px 15px;
 	border-radius: 10px
-}
-
-.img{
-	float: left;
 }
